@@ -1,12 +1,14 @@
 ﻿using Simulateur.Metier.Comportements;
+using Simulateur.Metier.Personnages;
+
 
 namespace Simulateur.Metier
 {
     class Soldat:Personnage
     {
 
-        public Soldat(string unNom)
-            : base(unNom)
+        public Soldat(EtatMajor etatmaj, string unNom)
+            : base(etatmaj,unNom)
         {
             ComportementSeDeplacer = new ComportementCourrir();
         }

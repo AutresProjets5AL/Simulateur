@@ -1,4 +1,5 @@
 ﻿using Simulateur.Metier.Comportements;
+using Simulateur.Metier.Personnages;
 
 namespace Simulateur.Metier
 {
@@ -6,8 +7,8 @@ namespace Simulateur.Metier
     {
 
         
-        public Moine(string unNom)
-            : base(unNom)
+        public Moine(EtatMajor etatmaj, string unNom)
+            : base(etatmaj,unNom)
         {
             ComportementSeDeplacer = new ComportementMarcher();
         }

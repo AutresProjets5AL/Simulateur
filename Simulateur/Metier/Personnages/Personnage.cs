@@ -1,17 +1,21 @@
 ﻿using Simulateur.Metier.Comportements;
-
+using Simulateur.Metier.Personnages;
+using System;
 namespace Simulateur.Metier
 {
-    class Personnage
+    class Personnage : Observateur
     {
         public string Nom { get; set; }
+        private string etatObservé;
         public ComportementSeDeplacer ComportementSeDeplacer { get; set; }
+        public EtatMajor EtatMaj { get; set; }
 
         //-----------------------------------------------------------------------------
-        protected Personnage(string sonNom)
+        protected Personnage(EtatMajor etatmaj, string sonNom)
         {
              Nom = sonNom;
              ComportementSeDeplacer = null;
+             EtatMaj = etatmaj;
            
         }
 
@@ -30,6 +34,10 @@ namespace Simulateur.Metier
             return 3;
         }
 
-
+        public override void Update()
+        {
+            etatObservé = EtatMaj.ModeFonctionnement().ToString();
+            Console.WriteLine("Observer {0} : new state is {1}", Nom, etatObservé);
+        }
     }
 }
