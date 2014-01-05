@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Simulateur.Metier.Personnages
 {
     //Adefinir
-    enum eMode
+   public enum eMode
     {
         NonDefini,
         EnGuerre,
@@ -18,7 +18,7 @@ namespace Simulateur.Metier.Personnages
     public class EtatMajor : SujetObservé
     {
 
-        private eMode modeFonctionnement;
+        public eMode modeFonctionnement;
 
         public EtatMajor() : this(null)
         {

@@ -2,7 +2,7 @@
 
 namespace Simulateur.Metier.Comportements
 {
-    abstract class ComportementSeDeplacer
+    abstract public class ComportementSeDeplacer
     {
         public abstract int SeDeplacer();
     }

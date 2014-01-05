@@ -2,7 +2,7 @@
 
 namespace Simulateur.Metier.Personnages
 {
-    abstract class SujetObservé
+    public abstract class SujetObservé
     {
         private readonly List<Observateur> ObservateurList;
 

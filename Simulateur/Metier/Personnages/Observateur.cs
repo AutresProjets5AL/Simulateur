@@ -8,7 +8,7 @@ namespace Simulateur.Metier.Personnages
 {
      public abstract class Observateur
     {
-        public void Update()
+         public virtual void Update()
         {
         }
     }

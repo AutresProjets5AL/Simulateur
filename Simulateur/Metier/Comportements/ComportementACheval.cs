@@ -2,7 +2,7 @@
 
 namespace Simulateur.Metier.Comportements
 {
-    class ComportementMarcher:ComportementSeDeplacer
+    class ComportementACheval:ComportementSeDeplacer
     {
         public override int SeDeplacer()
         {
