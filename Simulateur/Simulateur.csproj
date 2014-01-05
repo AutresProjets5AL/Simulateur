@@ -44,13 +44,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Metier\Comportements\ComportementCourrir.cs" />
+    <Compile Include="Metier\Comportements\ComportementSeDeplacer.cs" />
+    <Compile Include="Metier\Comportements\ComportementMarcher.cs" />
+    <Compile Include="Metier\Comportements\ComportementACheval.cs" />
+    <Compile Include="Metier\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Metier\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Metier\Personnages\Chevalier.cs" />
+    <Compile Include="Metier\Personnages\Moine.cs" />
+    <Compile Include="Metier\Personnages\Personnage.cs" />
+    <Compile Include="Metier\Personnages\Princesse.cs" />
+    <Compile Include="Metier\Personnages\Soldat.cs" />
+    <Compile Include="Metier\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -74,6 +83,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
