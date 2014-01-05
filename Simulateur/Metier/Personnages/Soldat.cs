@@ -7,8 +7,8 @@ namespace Simulateur.Metier
     class Soldat:Personnage
     {
 
-        public Soldat(EtatMajor etatmaj, string unNom)
-            : base(etatmaj,unNom)
+        public Soldat(EtatMajor etatmaj, string unNom, int ligne, int colonne)
+            : base(etatmaj, unNom, ligne, colonne)
         {
             ComportementSeDeplacer = new ComportementCourrir();
         }

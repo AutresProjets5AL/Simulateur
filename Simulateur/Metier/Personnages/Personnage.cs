@@ -6,16 +6,21 @@ namespace Simulateur.Metier
     class Personnage : Observateur
     {
         public string Nom { get; set; }
-        private string etatObservé;
+        private string EtatObservé;
+        private int Ligne;
+        private int Colonne;
         public ComportementSeDeplacer ComportementSeDeplacer { get; set; }
         public EtatMajor EtatMaj { get; set; }
 
         //-----------------------------------------------------------------------------
-        protected Personnage(EtatMajor etatmaj, string sonNom)
+        protected Personnage(EtatMajor etatmaj, string sonNom, int ligne, int colonne)
         {
              Nom = sonNom;
              ComportementSeDeplacer = null;
              EtatMaj = etatmaj;
+             Ligne = ligne;
+             Colonne = colonne;
+
            
         }
 
@@ -36,8 +41,8 @@ namespace Simulateur.Metier
 
         public override void Update()
         {
-            etatObservé = EtatMaj.ModeFonctionnement().ToString();
-            Console.WriteLine("Observer {0} : new state is {1}", Nom, etatObservé);
+            EtatObservé = EtatMaj.ModeFonctionnement().ToString();
+            Console.WriteLine("Observer {0} : new state is {1}", Nom, EtatObservé);
         }
     }
 }

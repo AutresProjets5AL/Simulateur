@@ -7,8 +7,8 @@ namespace Simulateur.Metier
     {
 
         
-        public Moine(EtatMajor etatmaj, string unNom)
-            : base(etatmaj,unNom)
+        public Moine(EtatMajor etatmaj, string unNom, int ligne, int colonne)
+            : base(etatmaj, unNom, ligne, colonne)
         {
             ComportementSeDeplacer = new ComportementMarcher();
         }
