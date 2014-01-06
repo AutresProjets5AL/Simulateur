@@ -4,7 +4,7 @@ namespace Simulateur.Metier.Personnages
 {
     public abstract class SujetObservé
     {
-        private readonly List<Observateur> ObservateurList;
+        private readonly List<Observateur> ObservateurList = new List<Observateur>();
 
 
         public void Attach(Observateur observer)

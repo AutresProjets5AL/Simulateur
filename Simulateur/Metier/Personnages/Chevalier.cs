@@ -9,7 +9,7 @@ namespace Simulateur.Metier.Personnages
         public Chevalier(EtatMajor etatmaj,  string unNom, int ligne, int colonne)
             : base(etatmaj, unNom, ligne, colonne)
         {
-            ComportementSeDeplacer = new ComportementMarcher();
+            ComportementSeDeplacer = new ComportementACheval();
         }
 
         public override string Afficher()

@@ -18,8 +18,8 @@ namespace Simulateur.Metier.Personnages
     public class EtatMajor : SujetObservé
     {
 
-        public eMode modeFonctionnement;
-
+       // public eMode modeFonctionnement;
+        public eMode modeFonctionnement { get; set; }
         public EtatMajor() : this(null)
         {
         }
