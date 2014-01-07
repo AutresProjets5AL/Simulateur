@@ -61,6 +61,7 @@
     <Compile Include="Metier\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Metier\Objets\Objet.cs" />
     <Compile Include="Metier\Personnages\Chevalier.cs" />
     <Compile Include="Metier\Personnages\EtatMajor.cs" />
     <Compile Include="Metier\Personnages\Moine.cs" />
