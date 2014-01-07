@@ -8,5 +8,7 @@ namespace Simulateur.Metier.Objets
 {
     class Objet
     {
+        public string Nom { get; set; }
+
     }
 }
