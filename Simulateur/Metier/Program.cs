@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using Simulateur.Metier.Personnages;
 using Simulateur.Metier.Comportements;
 using Simulateur.Metier;
+using Simulateur.Metier.Environnements;
 
 namespace Simulateur
 {
@@ -19,7 +20,7 @@ namespace Simulateur
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
+            /*
             EtatMajor etat = new EtatMajor();
             etat.modeFonctionnement = eMode.EnGuerre;
             etat.Notify();
@@ -43,8 +44,34 @@ namespace Simulateur
             Console.WriteLine(moine.EtatMaj.ModeFonctionnement());
 
             etat.Notify();
-            Console.WriteLine(moine.EtatMaj.ModeFonctionnement());
-            Application.Run(new Form1());
+            Console.WriteLine(moine.EtatMaj.ModeFonctionnement());*/
+
+            FabriquePlateauDeJeuAbstrait fb = new FabriqueChamp();
+            EnvironnementDeJeu evt = new EnvironnementDeJeu(fb);
+            evt.Run();
+            
+         /*   Form form = new Form();
+            form.AutoSize = true;
+            form.FormBorderStyle = FormBorderStyle.FixedDialog;
+
+      
+            //...
+
+            TextBox text = new TextBox();
+            text.Text = "A";
+            text.Anchor = AnchorStyles.None;
+
+            TableLayoutPanel box = new TableLayoutPanel();
+            box.AutoSize = true;
+            box.RowCount = 20;
+            box.ColumnCount = 20;
+  
+            box.Controls.Add(text, 0, 0);
+
+            form.Controls.Add(box);
+        //    form.ShowDialog();*/
+         //   Application.Run(form);
+       //     Application.Run(new Form1());
  
         }
     }

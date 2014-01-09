@@ -1,4 +1,4 @@
-﻿namespace Simulateur.Metier.Objets.Comportements
+﻿/*namespace Simulateur.Metier.Objets.Comportements
 {
     public class ComportementVision : ComportementObjets
     {
@@ -10,4 +10,4 @@
             Bonus = bonus;
         }
     }
-}
+}*/

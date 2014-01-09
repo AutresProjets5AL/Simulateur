@@ -16,5 +16,10 @@ namespace Simulateur
         {
             InitializeComponent();
         }
+
+        private void testTable_Paint(object sender, PaintEventArgs e)
+        {
+         
+        }
     }
 }
